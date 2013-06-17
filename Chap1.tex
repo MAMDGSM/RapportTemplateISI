@@ -1,0 +1,192 @@
+\doublespace
+\ChNumVar{\fontsize{76}{80}\usefont{OT1}{pzc}{m}{n}\selectfont}
+\ChTitleVar{\raggedleft\Large\sffamily\bfseries}
+
+\nomChap{Présentation}
+
+\chapter{\@nomChap}
+\vspace{3cm}
+\begin{center}
+\resizebox{!}{10mm}{\bf \fontfamily{lmss}\selectfont \@nomChap}\\
+\end{center}
+\lhead{\normalsize \bf \fontfamily{lmss}\selectfont \@nomChap}
+
+\clearpage
+
+\section{Section I}
+\lipsum[1-3] %remplacer par votre text
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{| l | l |}
+			\hline
+			\multicolumn{2}{|>{\columncolor[gray]{0.9}}c|}{\bf \fontfamily{lmss}\selectfont Liste des packages latex}\\
+			\hline
+			\hline
+			{\fontfamily{lmss}\selectfont \textbf{Utilité}} & {\fontfamily{lmss}\selectfont \textbf{Les packages}}\\
+			\hline
+			\hline
+			\hline
+			Packages de langue & inputenc, fontenc, babel\\
+			\hline
+			Création d'un layout & layout\\
+			\hline
+			Modification des marges & geometry\\
+			\hline
+			Interligne & setspace\\
+			\hline
+			Soulignement & soul,ulem\\
+			\hline
+			Symbole \EUR & eurosym\\
+			\hline
+			Pack de police & bookman, charter, newcent\\
+			\hline
+			Citation d'url & url\\
+			\hline
+			Citation de code & verbatim, moreverb\\
+			\hline
+			Citation de code coloré & listings\\
+			\hline
+			En-têtes et pieds de pages personnalisés & fancyhdr\\
+			\hline
+			Insertion d'images & graphicx\\
+			\hline
+			Insertion d'une image dans un paragraphe & wrapfig\\
+			\hline
+			Manipuler les couleurs et colorer du texte & color\\
+			\hline
+			Colorer du texte contenu dans un tableau & colortbl\\
+			\hline
+			Insertion d'expressions scientifiques & amsmath, amssymb, mathrsfs, amsthm\\
+      \hline
+      Création d'index & makeidx\\
+      \hline
+      \hline
+\end{tabular}  
+	\caption{Tableau avec des cellules fusionneés/coloreés}
+	\label{Tableau avec des cellules fusionneés/coloreés}
+\end{table}
+
+\begin{table}[ht!]
+\centering
+	\begin{tabular}{|c|c|c|c|} 
+\hline
+\multicolumn{2}{|c|}{Espagne} &  \multicolumn{2}{c|}{Autriche} \\ 
+\hline
+\multirow{3}{*}{Year} & \multicolumn{2}{c|}{1900} & Ferdinand I \\ 
+\cline{2-4} 
+& & 2000 & Maximilien II \\  
+\cline{3-4} 
+& & \multirow{2}{*}{2001} & \multirow{2}{*}{Rodolphe III} \\
+\cline{1-2} 
+Year I & 2012 & & \\
+\hline
+\end{tabular}
+		\caption{Tableau avec des cellules fusionneés I}
+	\label{Tableau avec des cellules fusionneés I}
+		\vspace{1cm}
+\begin{tabular}{|c||c|} 
+\hline
+\multicolumn{1}{|>{\columncolor[gray]{0.9}}c||}{\bf Espagne}& Autriche\\
+\multicolumn{1}{|>{\columncolor[rgb]{0.55,0,0}}c||}{\bf \textcolor[rgb]{1,1,1}{Espagne}}& Autriche\\
+\hline
+\hline
+\end{tabular}
+		\caption{Tableau avec des cellules/textes coloreés}
+	\label{Tableau avec des cellules/textes coloreés}
+\end{table}
+
+%%%%%%%%%%%%%%%commndes pour ajouter :
+Biblio ~\cite{Nom}% ajouter une entree à la Bib (fichier Biblio.bib)
+
+\newacronym{GED}{GED}{Gestion Électronique des Documents} \gls{GED}% ajouter une entree au Glossaire
+
+J2ME dans l'index\index{J2ME@J2ME}% ajouter une entree à l'index
+%%%%%%%%%%%%%%%
+
+\newpage
+\lstset{
+language={[LaTeX]TeX},
+frameround=fttt,
+xleftmargin=15mm,
+xrightmargin=15mm,
+keywordstyle=\bfseries\ttfamily\color[rgb]{0,0,1},
+identifierstyle=\ttfamily,
+commentstyle=\color[rgb]{0.133,0.545,0.133},
+stringstyle=\ttfamily\color[rgb]{0.627,0.126,0.941},
+showstringspaces=false,
+basicstyle=\small,
+numberstyle=\footnotesize,
+numbers=left,
+stepnumber=1,
+numbersep=10pt,
+tabsize=2,
+breaklines=true,
+prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+breakatwhitespace=false,
+aboveskip={1.5\baselineskip},
+columns=fixed,
+upquote=true,
+extendedchars=true,
+frame=bottomline,
+inputencoding=utf8
+}
+
+\lettrine[lines=2]{L}{} orem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat
+ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy
+eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque
+\singlespace
+
+\begin{lstlisting}[language={[LaTeX]TeX}, label=liste, caption=Code à compiler, inputencoding=utf8/latin1, frame=single,numbers=left, numberstyle=\tiny]
+\usepackage[left=2cm, right=2cm, top=4cm, bottom=2cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{layout}
+\usepackage{lettrine}
+\usepackage{setspace}
+\usepackage{soul}
+\usepackage{ulem}
+\usepackage{graphicx}
+\usepackage{bookman}
+\usepackage{charter}
+\usepackage{newcent}
+\usepackage{lmodern}
+\usepackage{mathpazo}
+\usepackage{mathptmx}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{moreverb}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{wrapfig}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{pifont}
+\usepackage{textcomp}
+
+
+\begin{document}
+			\begin{center}
+			     \Huge Package en mode hors connexion!
+			\end{center}
+\end{document}
+\end{lstlisting}
+
+\doublespace
+
+\begin{figure}[ht!]
+		\centering
+		\includegraphics[width=5cm]{LogoISI.png}
+		\caption{Logo de l'ISI}
+\end{figure}
+
+Autres pacquages\\
+{\color[rgb]{0.41,0.41,0.41}\href{http://en.wikibooks.org/wiki/LaTeX/Packages}{Wikibooks 'LaTeX Packages'}}

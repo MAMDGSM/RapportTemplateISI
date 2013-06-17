@@ -1,6 +1,6 @@
 ﻿Description
 ----
-  "RapportTemplateISI" est un ensemble de fichier qui permet de générer le rapport de l'ISI,
+  "RapportTemplateISI" est un ensemble de fichiers qui permet de générer le rapport de l'ISI,
   l'Institut Supérieur d'Informatique de l'Université Tunis El Manar, Ariana, Tunisie.
 
   La mise en page a été adapté en LaTeX par :
